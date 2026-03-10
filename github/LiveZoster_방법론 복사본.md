@@ -1,7 +1,3 @@
----
-typora-copy-images-to: ./images
----
-
 **반사실적 매개 분석(Counterfactual Mediation Analysis)**
 
 1. 잠재적 결과의 정의
@@ -19,6 +15,7 @@ typora-copy-images-to: ./images
 2. 총효과/직접효과/간접효과
    **① 총 효과**
    백신 접종이 심혈관 질환에 미치는 전체적인 영향력
+   
    $$
    TE = \frac{E[Y(1, M(1))]} {E[Y(0, M(0))]}
    $$
@@ -27,6 +24,7 @@ typora-copy-images-to: ./images
 
 ​	**② 직접 효과**
 ​	대상포진 합병증 경로를 차단했을 때, 백신 자체가 미치는 순수 효과
+
 $$
 NDE = \frac{E[Y(1, M(0))]} { E[Y(0, M(0))]}
 $$
@@ -34,6 +32,7 @@ $$
 
 ​	**③ 간접 효과**
 ​	대상포진 합병증 예방을 통해서만 전달되는 효과
+
 $$
 NIE = \frac{E[Y(1, M(1))]}{E[Y(1, M(0))]}
 $$
@@ -44,13 +43,21 @@ $$
 
 
 3. 오즈비(OR)
-   $$
-   OR_{TE} \approx OR_{NDE} \times OR_{NIE}\,\,\,\,\,\,\text{rare disease assumption이 성립할 때}\\
+
    
-   \ln(OR_{TE}) = \ln(OR_{NDE}) + \ln(OR_{NIE})
-   $$
+$$
+OR_{TE} \approx OR_{NDE} \times OR_{NIE}
+$$
+
+$$
+\text{rare disease assumption이 성립할 때}
+$$
+
+$$
+\ln(OR_{TE}) = \ln(OR_{NDE}) + \ln(OR_{NIE})
+$$
    
-4. 매개 비율
+5. 매개 비율
 
 $$
 \% \text{ Mediation} = \frac{\ln(OR_{NIE})}{\ln(OR_{TE})} \times 100\\
