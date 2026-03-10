@@ -1,7 +1,3 @@
----
-typora-copy-images-to: ./images
----
-
 **연구 질문**: MASH(대사 기능 장애 관련 지방간염)로 인해 보상성 간경변(Compensated Cirrhosis)이 있는 비만 환자에게 '대사 수술'을 시행했을 때, 수술하지 않은 경우보다 '주요 간 질환 합병증(MALO)' 발생 위험을 장기적으로 낮출 수 있는가?
 
 
@@ -138,7 +134,7 @@ Meier estimates of cumulative incidence ← adjusted Cox models
 
 Cf) Log-rank test의 p-value; Chi-square 분포 하에서
 
-**검정 통계량의 차이 **
+**검정 통계량의 차이**
 
 $$
 (\chi^2  vs. Z)
